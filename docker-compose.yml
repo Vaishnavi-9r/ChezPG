@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16
+    container_name: chezpg-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: chezpg
+      POSTGRES_USER: chezpg
+      POSTGRES_PASSWORD: chezpg_dev_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - chezpg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chezpg -d chezpg"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  chezpg_data:

@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "ChezPG",
+    "slug": "chezpg",
+    "scheme": "chezpg",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "expo-system-ui"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.chezpg.app",
+      "usesCleartextTraffic": false
+    }
+  }
+}

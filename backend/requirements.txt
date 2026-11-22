@@ -1,0 +1,11 @@
+﻿fastapi
+uvicorn[standard]
+SQLAlchemy
+psycopg[binary]
+pydantic-settings
+email-validator
+pwdlib[argon2]
+PyJWT
+Pillow
+python-multipart
+httpx2

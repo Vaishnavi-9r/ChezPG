@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+backend/private_uploads/
+backend/private_verification_uploads/
+mobile/.env
+mobile/.env.local
+mobile/.expo/
+mobile/node_modules/
